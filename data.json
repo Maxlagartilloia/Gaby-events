@@ -1,0 +1,189 @@
+{
+  "paquetes": [
+    {
+      "id": 1,
+      "nombre": "Cloud Gold Baby Shower",
+      "precio": 160,
+      "categoria": "Tematicas Elegantes",
+      "foto": "cloud-gold.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Safari Kids Premium",
+      "precio": 180,
+      "categoria": "Tematicas Infantiles",
+      "foto": "safari-premium.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Boda Minimal Deluxe",
+      "precio": 220,
+      "categoria": "Paquetes Premium",
+      "foto": "boda-minimal.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Cumpleaños Stitch",
+      "precio": 150,
+      "categoria": "Tematicas Infantiles",
+      "foto": "stitch.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Rosa Gold Deluxe",
+      "precio": 190,
+      "categoria": "Tematicas Elegantes",
+      "foto": "rosa-gold.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Ángel Blanco Baby",
+      "precio": 170,
+      "categoria": "Tematicas Elegantes",
+      "foto": "angel-blanco.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Peppa Pink Party",
+      "precio": 160,
+      "categoria": "Tematicas Infantiles",
+      "foto": "peppa.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Frozen Ice Dream",
+      "precio": 195,
+      "categoria": "Tematicas Infantiles",
+      "foto": "frozen.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Dinosaurio Jurassic",
+      "precio": 210,
+      "categoria": "Tematicas Infantiles",
+      "foto": "dinosaurio.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Baby Celestial",
+      "precio": 180,
+      "categoria": "Tematicas Elegantes",
+      "foto": "celestial.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Sweet Candy Party",
+      "precio": 165,
+      "categoria": "Tematicas Infantiles",
+      "foto": "candy.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Rose Gold Wedding",
+      "precio": 250,
+      "categoria": "Tematicas Elegantes",
+      "foto": "boda-rose-gold.jpg"
+    }
+  ],
+
+  "piezas": [
+    {
+      "id": 100,
+      "nombre": "Cilindros (set 3)",
+      "precio": 25,
+      "categoria": "Alquiler",
+      "foto": "cilindros.jpg"
+    },
+    {
+      "id": 101,
+      "nombre": "Aro Circular",
+      "precio": 20,
+      "categoria": "Alquiler",
+      "foto": "aro-circular.jpg"
+    },
+    {
+      "id": 102,
+      "nombre": "Mesa Principal",
+      "precio": 15,
+      "categoria": "Alquiler",
+      "foto": "mesa-principal.jpg"
+    },
+    {
+      "id": 103,
+      "nombre": "Mesa Dulce",
+      "precio": 20,
+      "categoria": "Alquiler",
+      "foto": "mesa-dulce.jpg"
+    },
+    {
+      "id": 104,
+      "nombre": "Sillas Tiffany",
+      "precio": 10,
+      "categoria": "Alquiler",
+      "foto": "sillas-tiffany.jpg"
+    },
+    {
+      "id": 105,
+      "nombre": "Sillas Forradas",
+      "precio": 5,
+      "categoria": "Alquiler",
+      "foto": "sillas-forradas.jpg"
+    },
+    {
+      "id": 110,
+      "nombre": "Arco Orgánico Premium",
+      "precio": 40,
+      "categoria": "Globos",
+      "foto": "arco-organico.jpg"
+    },
+    {
+      "id": 111,
+      "nombre": "Arco de Globos Metalizados",
+      "precio": 45,
+      "categoria": "Globos",
+      "foto": "arco-metalico.jpg"
+    },
+    {
+      "id": 113,
+      "nombre": "Backing Rosa",
+      "precio": 25,
+      "categoria": "Backings",
+      "foto": "backing-rosa.jpg"
+    },
+    {
+      "id": 114,
+      "nombre": "Backing Blanco",
+      "precio": 25,
+      "categoria": "Backings",
+      "foto": "backing-blanco.jpg"
+    },
+    {
+      "id": 117,
+      "nombre": "Letras 3D",
+      "precio": 25,
+      "categoria": "Extras",
+      "foto": "letras-3d.jpg"
+    },
+    {
+      "id": 120,
+      "nombre": "Temática Baby Gold",
+      "precio": 45,
+      "categoria": "Tematicas Elegantes",
+      "foto": "tematica-baby-gold.jpg"
+    },
+    {
+      "id": 121,
+      "nombre": "Temática Safari",
+      "precio": 40,
+      "categoria": "Tematicas Infantiles",
+      "foto": "tematica-safari.jpg"
+    },
+    {
+      "id": 122,
+      "nombre": "Temática Unicornio",
+      "precio": 50,
+      "categoria": "Tematicas Infantiles",
+      "foto": "tematica-unicornio.jpg"
+    }
+  ]
+}
