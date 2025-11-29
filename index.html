@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaby Garzón Events | Decoración Profesional</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    transition:.3s;
+}
+.title-font{font-family:'Playfair Display',serif;}
+.gold{color:#d4a055;}
+.bg-gold{background:#d4a055;}
+
+.section{padding:60px 20px;}
+
+.rounded-soft{border-radius:18px;}
+.soft-card{
+    border-radius:18px;
+    background:#ffffff;
+    box-shadow:0 4px 18px rgba(0,0,0,0.08);
+    transition:.2s;
+}
+.soft-card:hover{transform:scale(1.02);}
+
+/* GALERÍA */
+.gallery-img{
+    border-radius:18px;
+    transition:.2s;
+}
+.gallery-img:hover{transform:scale(1.03);}
+
+/* DARK MODE */
+.dark{background:#121212;color:white;}
+.dark .soft-card{background:#1d1d1d;border:1px solid #333;}
+.dark .section, .dark header{background:#1a1a1a;}
+.dark h1,.dark h2,.dark h3,.dark p{color:white !important;text-shadow:0 0 5px black;}
+.dark .gallery-img{filter:brightness(0.85);}
+.dark #cotizadorBtn{background:#d4a055;color:white;}
+
+/* DARK BUTTON */
+#darkToggle{
+    background:#f0f0f0;
+    width:54px;height:54px;
+    border-radius:50%;
+    position:fixed;
+    right:20px;top:20px;
+    z-index:50;
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;
+    border:2px solid #ccc;
+}
+.dark #darkToggle{
+    background:#2a2a2a;
+    border-color:#555;
+    color:yellow;
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+    position:fixed;
+    right:20px;bottom:30px;
+    width:65px;height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;justify-content:center;align-items:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+    z-index:50;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MODO OSCURO -->
+<div id="darkToggle">🌙</div>
+
+<!-- WHATSAPP -->
+<a class="whatsapp-float"
+   href="https://wa.me/593992004343?text=Hola%20Gaby%20Garz%C3%B3n%20Events.%20Quisiera%20informaci%C3%B3n%20sobre%20decoraci%C3%B3n%20para%20mi%20evento.%20¿Podr%C3%ADas%20ayudarme%20con%20opciones%20y%20disponibilidad%3F%20Gracias%20🙏✨">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="38">
+</a>
+
+<!-- HEADER -->
+<header class="w-full py-4 bg-white dark:bg-[#1a1a1a] shadow flex flex-col items-center">
+    <img src="logo-gaby.png" class="h-16 mb-2">
+    <h1 class="title-font text-3xl gold">Gaby Garzón Events</h1>
+</header>
+
+<!-- HERO -->
+<section class="section text-center">
+    <img src="hero.jpg" class="w-full rounded-soft shadow-xl mb-6">
+
+    <h2 class="title-font text-4xl gold mb-3">Decoraciones que enamoran ✨</h2>
+    <p class="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
+        Creamos ambientes inolvidables para Baby Showers, Bodas, Cumpleaños Infantiles y eventos Premium.
+        Déjate sorprender por nuestro estilo elegante y personalizado.
+    </p>
+
+    <a id="cotizadorBtn"
+       href="/cotizador/index.html"
+       class="bg-gold text-white px-10 py-4 rounded-xl shadow-lg text-lg">
+       Cotizar mi evento 🎉
+    </a>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section class="section text-center">
+    <h2 class="title-font text-3xl gold mb-4">¿Quiénes somos?</h2>
+    <p class="max-w-2xl mx-auto text-gray-700 dark:text-gray-300 leading-relaxed">
+        En <b>Gaby Garzón Events</b> transformamos espacios con arte, amor y dedicación.
+        Cada detalle cuenta, cada color expresa, cada montaje transmite.
+        Creamos decoraciones que no solo se ven hermosas… también se sienten.
+    </p>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section">
+    <h2 class="title-font text-3xl gold text-center mb-6">Servicios</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="soft-card p-5 text-center">
+            <img src="servicio-baby.jpg" class="rounded-soft mb-4">
+            <h3 class="title-font text-xl gold mb-2">Baby Shower</h3>
+            <p>Ambientaciones tiernas y elegantes para dar la bienvenida a tu bebé.</p>
+        </div>
+
+        <div class="soft-card p-5 text-center">
+            <img src="servicio-infantil.jpg" class="rounded-soft mb-4">
+            <h3 class="title-font text-xl gold mb-2">Fiestas Infantiles</h3>
+            <p>Frozen, Mario, Dinosaurios, Safari, Peppa y más temáticas mágicas.</p>
+        </div>
+
+        <div class="soft-card p-5 text-center">
+            <img src="servicio-boda.jpg" class="rounded-soft mb-4">
+            <h3 class="title-font text-xl gold mb-2">Bodas y Eventos Elegantes</h3>
+            <p>Decoraciones sofisticadas para momentos únicos e inolvidables.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALERÍA AUTO-GENERADA -->
+<section class="section">
+    <h2 class="title-font text-3xl gold text-center mb-8">Galería de Eventos</h2>
+    <div id="galeria"></div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section text-center">
+    <h2 class="title-font text-3xl gold mb-4">¿Lista para tu evento soñado?</h2>
+    <p class="mb-5 text-gray-700 dark:text-gray-300">Arma tu evento y mira precios en vivo con nuestro cotizador exclusivo.</p>
+    <a href="/cotizador/index.html"
+       class="bg-gold text-white px-10 py-4 rounded-xl shadow-lg text-lg">
+       Abrir Cotizador Interactivo ✨
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="w-full py-6 bg-gray-900 text-center text-white">
+    <p class="opacity-70">© 2025 Gaby Garzón Events. Todos los derechos reservados.</p>
+    <p class="opacity-70">Shushufindi, Ecuador – 0992004343</p>
+</footer>
+
+<script>
+// DARK MODE
+const darkBtn = document.getElementById("darkToggle");
+darkBtn.addEventListener("click",()=>{
+    document.body.classList.toggle("dark");
+    darkBtn.textContent=document.body.classList.contains("dark")?"☀️":"🌙";
+});
+
+// GALERÍA DESDE data.json
+fetch("data.json")
+.then(r=>r.json())
+.then(data=>{
+    const all=[...data.paquetes,...data.piezas];
+    const galeria=document.getElementById("galeria");
+    const categorias={};
+
+    all.forEach(i=>{
+        if(!categorias[i.categoria]) categorias[i.categoria]=[];
+        categorias[i.categoria].push(i.foto);
+    });
+
+    galeria.innerHTML = Object.entries(categorias).map(([cat,fotos])=>`
+        <h3 class="title-font text-2xl gold mt-10 mb-4">${cat}</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            ${fotos.map(f=>`<img src="${f}" class="gallery-img shadow rounded-soft">`).join("")}
+        </div>
+    `).join("");
+});
+</script>
+
+</body>
+</html>
