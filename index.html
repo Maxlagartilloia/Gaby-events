@@ -10,23 +10,64 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
-body { font-family: 'Poppins', sans-serif; transition: .3s; }
+body { 
+    font-family: 'Poppins', sans-serif; 
+    transition: .3s; 
+}
+
 .title-font { font-family: 'Playfair Display', serif; }
 .gold { color: #d4a055; }
 .bg-gold { background-color: #d4a055; }
+
 .page { display: none; }
 .page.active { display: block; animation: fade .4s ease; }
-@keyframes fade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+@keyframes fade { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .nav-icon { width: 24px; opacity: 0.8; }
 .nav-item.active .nav-icon { opacity: 1; }
+
 .card:hover { transform: scale(1.02); transition: 0.2s; }
+
 #modalAgregar { backdrop-filter: blur(3px); }
 
-/* Dark mode */
+/* ⬛ MODO OSCURO — TEXTO VISIBLE */
 .dark { background-color: #121212; color: #eee; }
-.dark .card { background: #1d1d1d; }
+
+.dark h1, 
+.dark h2,
+.dark h3,
+.dark p,
+.dark span,
+.dark label {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8);
+}
+
+.dark .card { 
+    background: #1b1b1b; 
+    border: 1px solid #333; 
+}
 .dark header { background: #2a2a2a; }
-.dark .bg-white { background: #1d1d1d; }
+
+.dark input {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+}
+
+.dark .bg-white { 
+    background: #1d1d1d !important;
+}
+
+#darkToggle {
+    background-color: #2a2a2a;
+    border: 2px solid #555;
+    box-shadow: 0 0 5px rgba(255,255,255,0.2);
+}
 
 /* Galería estilo Instagram */
 #modalImgPreview {
@@ -38,22 +79,23 @@ body { font-family: 'Poppins', sans-serif; transition: .3s; }
 
 <body class="bg-white">
 
-<!-- BOTÓN DARK MODE -->
+<!-- 🌙 BOTÓN MODO OSCURO -->
 <button id="darkToggle"
    class="fixed top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full shadow bg-gray-200 z-50 text-xl">
    🌙
 </button>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/593992004343?text=Hola%20Gaby%20Garzon%20Events%2C%20quiero%20información"
-   class="fixed bottom-20 right-4 bg-green-500 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-xl z-50">
-    <img src="https://i.postimg.cc/HLKGZrwv/whatsapp.png" width="28">
+<!-- 📲 WHATSAPP FLOAT OFICIAL -->
+<a href="https://wa.me/593992004343?text=Hola%20Gaby%20Garz%C3%B3n%20Events%2C%20quiero%20cotizar%20una%20decoraci%C3%B3n.%20Me%20gustar%C3%ADa%20saber%20opciones%2C%20precios%20y%20disponibilidad%20para%20mi%20evento.%20Gracias%20por%20su%20atenci%C3%B3n%20🙏✨"
+   class="fixed bottom-20 right-4 z-50 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-xl">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+        class="w-10 h-10" />
 </a>
 
 <!-- HEADER -->
-<header class="bg-pink-100 text-center py-6 shadow">
+<header class="bg-pink-100 dark:bg-[#2a2a2a] text-center py-6 shadow">
     <h1 class="title-font text-3xl gold">Gaby Garzón Events</h1>
-    <p class="text-gray-600 text-sm px-4">Arma tu evento como si fuera una App 🎀</p>
+    <p class="text-gray-700 dark:text-gray-300 text-sm px-4">Arma tu evento como si fuera una App 🎀</p>
 </header>
 
 <!-- BUSCADOR -->
@@ -76,19 +118,25 @@ body { font-family: 'Poppins', sans-serif; transition: .3s; }
     <button class="filterBtn border border-gold px-4 py-2 rounded-lg" data-cat="Extras">Extras</button>
 </div>
 
-<!-- PÁGINAS -->
+<!-- HOME -->
 <div id="home" class="page active px-4 py-6">
     <h2 class="text-2xl gold title-font mb-4">Bienvenida ✨</h2>
-    <p class="text-gray-700 mb-6 dark:text-gray-300">Arma tu evento, elige piezas o paquetes y mira el costo en vivo.</p>
+    <p class="text-gray-700 dark:text-gray-300 mb-6">Arma tu evento, elige piezas o paquetes y mira el costo en vivo.</p>
     <img src="cloud-gold.jpg" class="rounded-xl shadow mb-6 imgOpen" onclick="openImg('cloud-gold.jpg')">
     <button onclick="openPage('paquetes')" class="bg-gold text-white w-full py-3 rounded-lg text-lg shadow">Empezar 🎉</button>
 </div>
 
 <!-- PAQUETES -->
-<div id="paquetes" class="page px-4 py-6"><h2 class="text-2xl title-font gold mb-6">Paquetes 🎁</h2><div id="paquetesContainer" class="grid gap-6"></div></div>
+<div id="paquetes" class="page px-4 py-6">
+    <h2 class="text-2xl title-font gold mb-6">Paquetes 🎁</h2>
+    <div id="paquetesContainer" class="grid gap-6"></div>
+</div>
 
 <!-- PIEZAS -->
-<div id="piezas" class="page px-4 py-6"><h2 class="text-2xl title-font gold mb-6">Piezas 🧩</h2><div id="piezasContainer" class="grid gap-6"></div></div>
+<div id="piezas" class="page px-4 py-6">
+    <h2 class="text-2xl title-font gold mb-6">Piezas 🧩</h2>
+    <div id="piezasContainer" class="grid gap-6"></div>
+</div>
 
 <!-- TOTAL -->
 <div id="totalPage" class="page px-4 py-6">
@@ -117,12 +165,13 @@ body { font-family: 'Poppins', sans-serif; transition: .3s; }
         <button class="bg-gold text-white w-full py-3 rounded-lg shadow text-lg">Enviar Solicitud</button>
     </form>
 
-    <button onclick="sendWhatsApp()" class="bg-green-500 text-white mt-4 w-full py-3 rounded-lg text-lg shadow-lg">
+    <button onclick="sendWhatsApp()" 
+            class="bg-green-500 text-white mt-4 w-full py-3 rounded-lg text-lg shadow-lg">
         Enviar por WhatsApp 📲
     </button>
 </div>
 
-<!-- NAVEGACIÓN INFERIOR -->
+<!-- NAVEGACIÓN -->
 <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-[#1d1d1d] shadow-lg py-2 flex justify-around border-t dark:border-gray-700">
     <div class="nav-item active" onclick="openPage('home')"><img class="nav-icon" src="https://img.icons8.com/ios-filled/50/home.png"></div>
     <div class="nav-item" onclick="openPage('paquetes')"><img class="nav-icon" src="https://img.icons8.com/ios-filled/50/gift.png"></div>
@@ -138,8 +187,11 @@ body { font-family: 'Poppins', sans-serif; transition: .3s; }
         <p id="modalTexto" class="text-gray-700 dark:text-gray-300 mb-6"></p>
 
         <div class="flex justify-between">
-            <button onclick="confirmarAgregar()" class="bg-gold text-white px-6 py-2 rounded-lg shadow">Sí, agregar</button>
-            <button onclick="cancelarAgregar()" class="bg-gray-300 dark:bg-gray-600 px-6 py-2 rounded-lg">
+            <button onclick="confirmarAgregar()" class="bg-gold text-white px-6 py-2 rounded-lg shadow">
+                Sí, agregar
+            </button>
+            <button onclick="cancelarAgregar()" 
+                class="bg-gray-300 dark:bg-gray-600 px-6 py-2 rounded-lg">
                 Cancelar
             </button>
         </div>
@@ -158,7 +210,6 @@ let total = 0;
 let itemPendiente = null;
 let currentCategory = "all";
 
-// Cambiar página
 function openPage(id) {
     document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
     document.getElementById(id).classList.add("active");
@@ -169,7 +220,7 @@ function openPage(id) {
     updateSummary();
 }
 
-// Cargar JSON
+// Cargar data
 let DATA = null;
 fetch("data.json")
     .then(r => r.json())
@@ -191,17 +242,14 @@ function renderItems() {
     paquetes.forEach(p => contPq.innerHTML += cardHTML(p));
     piezas.forEach(p => contPz.innerHTML += cardHTML(p));
 
-    document.querySelectorAll(".imgOpen").forEach(img =>
-        img.addEventListener("click", () => openImg(img.src))
-    );
-
     filtrar();
 }
 
 // Tarjeta
 function cardHTML(obj) {
     return `
-        <div class="card bg-white dark:bg-[#1d1d1d] rounded-xl shadow p-4" data-cat="${obj.categoria}" data-name="${obj.nombre}">
+        <div class="card bg-white dark:bg-[#1d1d1d] rounded-xl shadow p-4" 
+             data-cat="${obj.categoria}" data-name="${obj.nombre}">
             <img src="${obj.foto}" class="rounded-lg mb-3 imgOpen" onclick="openImg('${obj.foto}')">
             <h3 class="title-font text-xl gold mb-1">${obj.nombre}</h3>
             <p class="text-gray-800 dark:text-gray-300 font-bold mb-3">$${obj.precio}</p>
@@ -229,7 +277,7 @@ function cancelarAgregar() {
     document.getElementById("modalAgregar").classList.add("hidden");
 }
 
-// Eliminar item
+// Eliminar
 function eliminarItem(index) {
     items.splice(index, 1);
     updateSummary();
@@ -246,7 +294,10 @@ function updateSummary() {
     items.forEach((i, index) => {
         list.innerHTML += `
         <div class="border dark:border-gray-600 p-3 rounded-lg flex justify-between items-center">
-            <div><p class="font-semibold gold">${i.nombre}</p><p class="text-gray-700 dark:text-gray-300">$${i.precio}</p></div>
+            <div>
+                <p class="font-semibold gold">${i.nombre}</p>
+                <p class="text-gray-700 dark:text-gray-300">$${i.precio}</p>
+            </div>
             <button onclick="eliminarItem(${index})" class="text-red-500 text-xl font-bold">✖</button>
         </div>`;
         total += Number(i.precio);
@@ -257,13 +308,15 @@ function updateSummary() {
     document.getElementById("totalField").value = total;
 }
 
-// WhatsApp
+// WhatsApp elegante
 function sendWhatsApp() {
-    let msg = "Hola, estas son mis selecciones:%0A%0A";
+    let msg = "Hola Gaby Garzón Events,%0AQuiero cotizar una decoración.%0A%0AEstas son mis selecciones:%0A%0A";
+
     items.forEach(i => {
         msg += `• ${i.nombre} – $${i.precio}%0AFoto: ${window.location.origin}/${i.foto}%0A%0A`;
     });
-    msg += `TOTAL: $${total}%0A`;
+
+    msg += `TOTAL: $${total}%0A%0APor favor confirmar disponibilidad, precios y opciones. Gracias 🙏✨`;
 
     window.open("https://wa.me/593992004343?text=" + msg, "_blank");
 }
@@ -278,7 +331,7 @@ document.querySelectorAll(".filterBtn").forEach(btn => {
     };
 });
 
-// Filtrar + búsqueda
+// Buscar + filtrar
 document.getElementById("searchInput").addEventListener("input", filtrar);
 
 function filtrar() {
@@ -291,24 +344,23 @@ function filtrar() {
         const matchCategory = currentCategory === "all" || cat === currentCategory;
         const matchSearch = name.includes(term);
 
-        if (matchCategory && matchSearch) card.style.display = "block";
-        else card.style.display = "none";
+        card.style.display = (matchCategory && matchSearch) ? "block" : "none";
     });
 }
 
-// Galería estilo Instagram
+// Galería
 function openImg(src) {
-    document.getElementById("modalImgPreview").classList.add("flex");
-    document.getElementById("modalImgPreview").classList.remove("hidden");
     document.getElementById("modalImg").src = src;
+    document.getElementById("modalImgPreview").classList.remove("hidden");
+    document.getElementById("modalImgPreview").classList.add("flex");
 }
 
 function closeImg() {
-    document.getElementById("modalImgPreview").classList.remove("flex");
     document.getElementById("modalImgPreview").classList.add("hidden");
+    document.getElementById("modalImgPreview").classList.remove("flex");
 }
 
-// MODO OSCURO MANUAL
+// Dark mode
 const toggle = document.getElementById("darkToggle");
 
 toggle.addEventListener("click", () => {
