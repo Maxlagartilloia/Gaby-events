@@ -1,189 +1,169 @@
 {
   "paquetes": [
     {
-      "id": 1,
-      "nombre": "Cloud Gold Baby Shower",
-      "precio": 160,
+      "nombre": "Paquete Baby Cloud",
+      "precio": 150,
       "categoria": "Tematicas Elegantes",
-      "foto": "cloud-gold.jpg"
+      "foto": "paquete-baby-cloud.jpg"
     },
     {
-      "id": 2,
-      "nombre": "Safari Kids Premium",
-      "precio": 180,
-      "categoria": "Tematicas Infantiles",
-      "foto": "safari-premium.jpg"
+      "nombre": "Paquete Baby Angel",
+      "precio": 150,
+      "categoria": "Tematicas Elegantes",
+      "foto": "paquete-baby-angel.jpg"
     },
     {
-      "id": 3,
-      "nombre": "Boda Minimal Deluxe",
+      "nombre": "Paquete Boda Elegante",
       "precio": 220,
       "categoria": "Paquetes Premium",
-      "foto": "boda-minimal.jpg"
+      "foto": "paquete-boda-elegante.jpg"
     },
     {
-      "id": 4,
-      "nombre": "Cumpleaños Stitch",
-      "precio": 150,
+      "nombre": "Paquete Frozen",
+      "precio": 180,
       "categoria": "Tematicas Infantiles",
-      "foto": "stitch.jpg"
+      "foto": "paquete-infantil-frozen.jpg"
     },
     {
-      "id": 5,
-      "nombre": "Rosa Gold Deluxe",
-      "precio": 190,
-      "categoria": "Tematicas Elegantes",
-      "foto": "rosa-gold.jpg"
-    },
-    {
-      "id": 6,
-      "nombre": "Ángel Blanco Baby",
+      "nombre": "Paquete Dinosaurio",
       "precio": 170,
-      "categoria": "Tematicas Elegantes",
-      "foto": "angel-blanco.jpg"
+      "categoria": "Tematicas Infantiles",
+      "foto": "paquete-infantil-dino.jpg"
     },
     {
-      "id": 7,
-      "nombre": "Peppa Pink Party",
+      "nombre": "Paquete Premium Gold",
+      "precio": 250,
+      "categoria": "Paquetes Premium",
+      "foto": "paquete-premium-gold.jpg"
+    },
+    {
+      "nombre": "Paquete Safari",
       "precio": 160,
       "categoria": "Tematicas Infantiles",
-      "foto": "peppa.jpg"
+      "foto": "paquete-safari.jpg"
     },
     {
-      "id": 8,
-      "nombre": "Frozen Ice Dream",
-      "precio": 195,
+      "nombre": "Paquete Mario",
+      "precio": 155,
       "categoria": "Tematicas Infantiles",
-      "foto": "frozen.jpg"
+      "foto": "paquete-mario.jpg"
     },
     {
-      "id": 9,
-      "nombre": "Dinosaurio Jurassic",
-      "precio": 210,
+      "nombre": "Paquete Peppa",
+      "precio": 150,
       "categoria": "Tematicas Infantiles",
-      "foto": "dinosaurio.jpg"
-    },
-    {
-      "id": 10,
-      "nombre": "Baby Celestial",
-      "precio": 180,
-      "categoria": "Tematicas Elegantes",
-      "foto": "celestial.jpg"
-    },
-    {
-      "id": 11,
-      "nombre": "Sweet Candy Party",
-      "precio": 165,
-      "categoria": "Tematicas Infantiles",
-      "foto": "candy.jpg"
-    },
-    {
-      "id": 12,
-      "nombre": "Rose Gold Wedding",
-      "precio": 250,
-      "categoria": "Tematicas Elegantes",
-      "foto": "boda-rose-gold.jpg"
+      "foto": "paquete-peppa.jpg"
     }
   ],
 
   "piezas": [
     {
-      "id": 100,
-      "nombre": "Cilindros (set 3)",
-      "precio": 25,
-      "categoria": "Alquiler",
-      "foto": "cilindros.jpg"
-    },
-    {
-      "id": 101,
-      "nombre": "Aro Circular",
+      "nombre": "Cilindros Blancos",
       "precio": 20,
       "categoria": "Alquiler",
-      "foto": "aro-circular.jpg"
+      "foto": "cilindros-blancos.jpg"
     },
     {
-      "id": 102,
-      "nombre": "Mesa Principal",
+      "nombre": "Cilindros Rosas",
+      "precio": 20,
+      "categoria": "Alquiler",
+      "foto": "cilindros-rosas.jpg"
+    },
+    {
+      "nombre": "Aro Dorado",
       "precio": 15,
-      "categoria": "Alquiler",
-      "foto": "mesa-principal.jpg"
-    },
-    {
-      "id": 103,
-      "nombre": "Mesa Dulce",
-      "precio": 20,
-      "categoria": "Alquiler",
-      "foto": "mesa-dulce.jpg"
-    },
-    {
-      "id": 104,
-      "nombre": "Sillas Tiffany",
-      "precio": 10,
-      "categoria": "Alquiler",
-      "foto": "sillas-tiffany.jpg"
-    },
-    {
-      "id": 105,
-      "nombre": "Sillas Forradas",
-      "precio": 5,
-      "categoria": "Alquiler",
-      "foto": "sillas-forradas.jpg"
-    },
-    {
-      "id": 110,
-      "nombre": "Arco Orgánico Premium",
-      "precio": 40,
-      "categoria": "Globos",
-      "foto": "arco-organico.jpg"
-    },
-    {
-      "id": 111,
-      "nombre": "Arco de Globos Metalizados",
-      "precio": 45,
-      "categoria": "Globos",
-      "foto": "arco-metalico.jpg"
-    },
-    {
-      "id": 113,
-      "nombre": "Backing Rosa",
-      "precio": 25,
       "categoria": "Backings",
-      "foto": "backing-rosa.jpg"
+      "foto": "aro-dorado.jpg"
     },
     {
-      "id": 114,
-      "nombre": "Backing Blanco",
-      "precio": 25,
-      "categoria": "Backings",
-      "foto": "backing-blanco.jpg"
+      "nombre": "Mesa de Madera",
+      "precio": 18,
+      "categoria": "Alquiler",
+      "foto": "mesa-madera.jpg"
     },
     {
-      "id": 117,
-      "nombre": "Letras 3D",
+      "nombre": "Mesa de Dulces",
+      "precio": 22,
+      "categoria": "Alquiler",
+      "foto": "mesa-dulces.jpg"
+    },
+    {
+      "nombre": "Carpa Blanca",
+      "precio": 30,
+      "categoria": "Alquiler",
+      "foto": "carpa-blanca.jpg"
+    },
+    {
+      "nombre": "Silla Tiffany",
+      "precio": 3,
+      "categoria": "Alquiler",
+      "foto": "silla-tiffany.jpg"
+    },
+    {
+      "nombre": "Silla Forrada",
+      "precio": 4,
+      "categoria": "Alquiler",
+      "foto": "silla-forrada.jpg"
+    },
+    {
+      "nombre": "Guirnalda Rosada",
       "precio": 25,
+      "categoria": "Globos",
+      "foto": "guirnalda-rosada.jpg"
+    },
+    {
+      "nombre": "Guirnalda Azul",
+      "precio": 25,
+      "categoria": "Globos",
+      "foto": "guirnalda-azul.jpg"
+    },
+    {
+      "nombre": "Luces LED",
+      "precio": 12,
       "categoria": "Extras",
-      "foto": "letras-3d.jpg"
+      "foto": "luces-led.jpg"
     },
     {
-      "id": 120,
-      "nombre": "Temática Baby Gold",
+      "nombre": "Backing Ángel",
+      "precio": 35,
+      "categoria": "Backings",
+      "foto": "backing-angel.jpg"
+    },
+    {
+      "nombre": "Backing Redondo",
+      "precio": 30,
+      "categoria": "Backings",
+      "foto": "backing-redondo.jpg"
+    },
+    {
+      "nombre": "Arco Orgánico Rosa",
       "precio": 45,
-      "categoria": "Tematicas Elegantes",
-      "foto": "tematica-baby-gold.jpg"
+      "categoria": "Globos",
+      "foto": "arco-organico-rosa.jpg"
     },
     {
-      "id": 121,
-      "nombre": "Temática Safari",
-      "precio": 40,
-      "categoria": "Tematicas Infantiles",
-      "foto": "tematica-safari.jpg"
+      "nombre": "Arco Orgánico Azul",
+      "precio": 45,
+      "categoria": "Globos",
+      "foto": "arco-organico-azul.jpg"
     },
     {
-      "id": 122,
-      "nombre": "Temática Unicornio",
-      "precio": 50,
-      "categoria": "Tematicas Infantiles",
-      "foto": "tematica-unicornio.jpg"
+      "nombre": "Columna de Globos",
+      "precio": 20,
+      "categoria": "Globos",
+      "foto": "columna-globos.jpg"
+    },
+    {
+      "nombre": "Centro de Mesa con Globos",
+      "precio": 8,
+      "categoria": "Globos",
+      "foto": "centro-mesa-globos.jpg"
+    },
+    {
+      "nombre": "Estrella Metálica",
+      "precio": 6,
+      "categoria": "Extras",
+      "foto": "estrella-metal.jpg"
     }
   ]
 }
